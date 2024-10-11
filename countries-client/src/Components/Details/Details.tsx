@@ -51,7 +51,7 @@ export default function DetailsPage() {
                   global.getCountriesDetails(c.name);
                 }}
               >
-                <CountryCard key={c.name} countryName={c.name} flag={c.flag} />
+                <CountryCard key={c.name} countryName={c.name} flag={c.flag ? c.flag : "https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg"} />
               </Link>
             ))}
           </div>
@@ -61,7 +61,7 @@ export default function DetailsPage() {
   };
 
   return (
-    <Box padding={0.7}>
+    <Box padding={0.7} sx={{backgroundColor: "#FFF8DC"}}>
       <Box display={"flex"} justifyContent={"space-between"}>
         <IconButton
           onClick={() => {
@@ -75,8 +75,8 @@ export default function DetailsPage() {
         <div></div>
       </Box>
       <Divider sx={{ marginBottom: 0.5 }} />
-      <Box display={"flex"} justifyContent={"center"}>
-        <img alt="flag" src={global?.countryDetails.flag} width={"500px"} />
+      <Box display={"flex"} justifyContent={"center"} >
+        <img alt="flag" src={global?.countryDetails.flag ? global?.countryDetails.flag : "https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg"} width={"500px"} />
       </Box>
       <Divider sx={{ marginTop: 2 }} />
       {borders()}

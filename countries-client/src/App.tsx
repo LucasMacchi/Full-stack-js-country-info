@@ -14,7 +14,7 @@ function App() {
     <div className="homeDiv">
       {global?.availableCountries.map((c) => (
         <Link to={"/" + c.name}>
-          <CountryCard key={c.name} countryName={c.name} flag={c.flag} />
+          <CountryCard key={c.name} countryName={c.name} flag={c.flag ? c.flag : "https://dynamoprojects.com/wp-content/uploads/2022/12/no-image.jpg"} />
         </Link>
       ))}
     </div>
