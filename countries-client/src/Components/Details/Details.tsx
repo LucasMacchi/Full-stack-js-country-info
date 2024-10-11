@@ -1,5 +1,5 @@
 import Typography from "@mui/material/Typography";
-import { Divider, Paper } from "@mui/material";
+import { Divider } from "@mui/material";
 import { Box } from "@mui/material";
 import { useContext, useEffect } from "react";
 import { GlobalContext } from "../../Context/Globalstate";
