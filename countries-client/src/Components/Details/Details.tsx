@@ -76,7 +76,7 @@ export default function DetailsPage() {
       </Box>
       <Divider sx={{ marginBottom: 0.5 }} />
       <Box display={"flex"} justifyContent={"center"}>
-        <img src={global?.countryDetails.flag} width={"500px"} />
+        <img alt="flag" src={global?.countryDetails.flag} width={"500px"} />
       </Box>
       <Divider sx={{ marginTop: 2 }} />
       {borders()}

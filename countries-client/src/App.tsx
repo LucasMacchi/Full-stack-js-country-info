@@ -3,7 +3,6 @@ import "./App.css";
 import CountryCard from "./Components/CountryCard/Card";
 import { useContext } from "react";
 import { GlobalContext } from "./Context/Globalstate";
-import { Grid2 } from "@mui/material";
 import { Link } from "react-router-dom";
 function App() {
   const global = useContext(GlobalContext);
